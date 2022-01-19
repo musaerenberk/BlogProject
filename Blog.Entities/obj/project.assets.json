@@ -1,11 +1,532 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Microsoft.EntityFrameworkCore/5.0.0-preview.7.20365.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.0-preview.7.20365.15",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.0-preview.7.20365.15",
+          "Microsoft.Extensions.Caching.Memory": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.DependencyInjection": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.Logging": "5.0.0-preview.7.20364.11",
+          "System.Collections.Immutable": "5.0.0-preview.7.20364.11",
+          "System.ComponentModel.Annotations": "5.0.0-preview.7.20364.11",
+          "System.Diagnostics.DiagnosticSource": "5.0.0-preview.7.20364.11"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.0-preview.7.20365.15": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.0-preview.7.20365.15": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.0-preview.7.20364.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.Options": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.Primitives": "5.0.0-preview.7.20364.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-preview.7.20364.11"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.Options": "5.0.0-preview.7.20364.11"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Logging.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Options/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-preview.7.20364.11",
+          "Microsoft.Extensions.Primitives": "5.0.0-preview.7.20364.11"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "System.Collections.Immutable/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/5.0.0-preview.7.20364.11": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
+        }
+      },
+      "Blog.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0-preview.7.20365.15"
+        },
+        "compile": {
+          "bin/placeholder/Blog.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.EntityFrameworkCore/5.0.0-preview.7.20365.15": {
+      "sha512": "g4n6lrqSIcLbS1B03YbiUV+C0tP3cCHR5W4NGyC/LaozfkIOX+2M6oZ7I7hieP6ssnKC+BHsPteEjMkBsLt3mw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore/5.0.0-preview.7.20365.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml",
+        "microsoft.entityframeworkcore.5.0.0-preview.7.20365.15.nupkg.sha512",
+        "microsoft.entityframeworkcore.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.0-preview.7.20365.15": {
+      "sha512": "jeC2h95Lc0b1rygPqW+96tK+ZEl+FFbVGRqpYiN+ELI8M1/1n2h+UhSlaWzXLoitWRVC8wnBpYSicEh3xU6AJw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.0-preview.7.20365.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.xml",
+        "microsoft.entityframeworkcore.abstractions.5.0.0-preview.7.20365.15.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.0-preview.7.20365.15": {
+      "sha512": "79QuJTZiHDFskxXwUH6IKDvW+/Yj0wAelQZItEyfXK0Kkc7yaQjyBHBA+YQoPD8q2S1YqPY/hJaSmMJ+/HPyTA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.0-preview.7.20365.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
+        "lib/netstandard2.0/_._",
+        "microsoft.entityframeworkcore.analyzers.5.0.0-preview.7.20365.15.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Abstractions/5.0.0-preview.7.20364.11": {
+      "sha512": "S3xsGNksF4RSycbui4w4Y2rpQaCnRlRDNKEsVZBKT4XJuEUdOmHPeFJ9Wcm9bDSJ5mLEfEzv5FEz6a+xJWLagg==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.abstractions/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "microsoft.extensions.caching.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Memory/5.0.0-preview.7.20364.11": {
+      "sha512": "qX2lsFiiTYCtlRqcJhI1eH6QgHLzbyfAGM3GfQMV3nn0OjislxLzLPuoBYbc3PY3X5Nko0C/Pyv9UE8/ldqqqQ==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.memory/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
+        "microsoft.extensions.caching.memory.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/5.0.0-preview.7.20364.11": {
+      "sha512": "+mZHhzJZUSPJW2k+ZJnESnTNqfJZALRD1PIwrOgtgZ6/bD7UgExrP5Ii2nZJZ370l4AGAOFHC8Ckh9v0RfF83Q==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0-preview.7.20364.11": {
+      "sha512": "PloUPPg1uMv41XmcqxTb7eKBpKKFfi+jWO9ZHjoMPw4ifF2+kAlebghZW6KZpB/y0kCpScZX8dzdaKDmGXgOMg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging/5.0.0-preview.7.20364.11": {
+      "sha512": "xMUyaZYzzVacrx6wdGh8Whyow58kHIbg4LuMVU1H/erCCpl7qydcpt/oveeVAR84sNOCD6lS4XRmurZJxr6vOA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.Extensions.Logging.dll",
+        "lib/net5.0/Microsoft.Extensions.Logging.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
+        "microsoft.extensions.logging.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "microsoft.extensions.logging.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0-preview.7.20364.11": {
+      "sha512": "zDDR/+7a4U6qbLRt79tvH/5FRBHsfMIUcAcVfDHLPXxLfYCIdUwnxhgtpzEF8F3XRfVDaDyABGJgldr/6tzLvw==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Options/5.0.0-preview.7.20364.11": {
+      "sha512": "pDwmWnzOsXggAU98IJnAG1ea7egqU3sY8SnHwMpMOG04DUhw1GNArxMlQmUORu5TlMuodEtinS6MdUIdRYal/Q==",
+      "type": "package",
+      "path": "microsoft.extensions.options/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.Extensions.Options.dll",
+        "lib/net5.0/Microsoft.Extensions.Options.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
+        "microsoft.extensions.options.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "microsoft.extensions.options.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/5.0.0-preview.7.20364.11": {
+      "sha512": "ddBYIH2AlflSH7wMT8XKpWpfA08lAn+fU/pVCvY3kt5TRRMXpBgzUDZ39S8MRNXFlqBsJDuapkxKjsv193we6g==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Collections.Immutable/5.0.0-preview.7.20364.11": {
+      "sha512": "MNZ/H3osa/kC2viO6Oj1HWLQlICct/uhQnNEGbnpO2rUmv75ERTgN63zY/72zZ3Ri78VMGMrIHdNak6F+0hLbA==",
+      "type": "package",
+      "path": "system.collections.immutable/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ComponentModel.Annotations/5.0.0-preview.7.20364.11": {
+      "sha512": "20SFa6IJj+jnwBe+Egt6SVnYnlOPB7zi2ZVvO20DlgqhVQ+qLPB/VtBA3ISuFNOQojFqLD5FOzgcER7W9cc+jg==",
+      "type": "package",
+      "path": "system.componentmodel.annotations/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net461/System.ComponentModel.Annotations.dll",
+        "lib/netcore50/System.ComponentModel.Annotations.dll",
+        "lib/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.xml",
+        "lib/portable-net45+win8/_._",
+        "lib/win8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net461/System.ComponentModel.Annotations.dll",
+        "ref/net461/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/System.ComponentModel.Annotations.dll",
+        "ref/netcore50/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/de/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/es/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/fr/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/it/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ja/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ko/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ru/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.xml",
+        "ref/portable-net45+win8/_._",
+        "ref/win8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.annotations.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/5.0.0-preview.7.20364.11": {
+      "sha512": "yMajcuiFLT3pBGJtpH7iEenOwLvodzwPl/OXnGFHW3U277qWSXvnKs8g8ie+9AO3+GAMYto0eCXsiscSoEAutQ==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/5.0.0-preview.7.20364.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net5.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net5.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.5.0.0-preview.7.20364.11.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Blog.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Shared/Blog.Shared.csproj",
+      "msbuildProject": "../Blog.Shared/Blog.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Blog.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\meren\\.nuget\\packages\\": {},
@@ -38,7 +559,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\meren\\OneDrive\\Belgeler\\BlogProject\\BlogProject\\Blog.Shared\\Blog.Shared.csproj": {
+              "projectPath": "C:\\Users\\meren\\OneDrive\\Belgeler\\BlogProject\\BlogProject\\Blog.Shared\\Blog.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

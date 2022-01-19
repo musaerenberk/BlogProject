@@ -1,0 +1,6 @@
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Entities.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Shared.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.csprojAssemblyReference.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.AssemblyInfoInputs.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.AssemblyInfo.cs

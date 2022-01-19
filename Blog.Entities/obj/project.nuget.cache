@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "seFZ0dKxH/x/L1cnu++LT3PDV3J+FPnZ+4fAPIra824iY2FY2c12xcwz2j2Eey8m6YrVlkyvhFoMmCDng4Q3Qg==",
+  "dgSpecHash": "30czsZltq5788bgiSu/+26MwvMiDZ65VzWtfIoLB2HoWLtm4wbytRRSyY5L53/gdBwU2evlmE/20FslOnxo4gA==",
   "success": true,
   "projectFilePath": "C:\\Users\\meren\\OneDrive\\Belgeler\\BlogProject\\BlogProject\\Blog.Entities\\Blog.Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0-preview.7.20365.15\\microsoft.entityframeworkcore.5.0.0-preview.7.20365.15.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0-preview.7.20365.15\\microsoft.entityframeworkcore.abstractions.5.0.0-preview.7.20365.15.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0-preview.7.20365.15\\microsoft.entityframeworkcore.analyzers.5.0.0-preview.7.20365.15.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0-preview.7.20364.11\\microsoft.extensions.caching.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0-preview.7.20364.11\\microsoft.extensions.caching.memory.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0-preview.7.20364.11\\microsoft.extensions.dependencyinjection.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0-preview.7.20364.11\\microsoft.extensions.dependencyinjection.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0-preview.7.20364.11\\microsoft.extensions.logging.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0-preview.7.20364.11\\microsoft.extensions.logging.abstractions.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.extensions.options\\5.0.0-preview.7.20364.11\\microsoft.extensions.options.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0-preview.7.20364.11\\microsoft.extensions.primitives.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\system.collections.immutable\\5.0.0-preview.7.20364.11\\system.collections.immutable.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-preview.7.20364.11\\system.componentmodel.annotations.5.0.0-preview.7.20364.11.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0-preview.7.20364.11\\system.diagnostics.diagnosticsource.5.0.0-preview.7.20364.11.nupkg.sha512"
+  ],
   "logs": []
 }
