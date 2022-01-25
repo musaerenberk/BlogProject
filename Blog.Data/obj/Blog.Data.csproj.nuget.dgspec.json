@@ -56,6 +56,8 @@
               "version": "[5.0.0-preview.7.20365.15, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0-preview.7.20365.15, )"
             },
