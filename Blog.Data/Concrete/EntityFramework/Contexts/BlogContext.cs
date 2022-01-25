@@ -1,4 +1,5 @@
-﻿using Blog.Entities.Concrete;
+﻿using Blog.Data.Concrete.EntityFramework.Mappings;
+using Blog.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,5 +22,14 @@ namespace Blog.Data.Concrete.EntityFramework.Contexts
                 @"Server=(localdb)\Git;Database=BerkKaradeli;Trusted_Connection=True;Connect Timeout=30;MultipleActiveResultSets=True;");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new ArticleMap());
+            modelBuilder.ApplyConfiguration(new CategoryMap());
+            modelBuilder.ApplyConfiguration(new CommentMap());
+            modelBuilder.ApplyConfiguration(new RoleMap());
+            modelBuilder.ApplyConfiguration(new UserMap());
+
+        }
     }
 }
