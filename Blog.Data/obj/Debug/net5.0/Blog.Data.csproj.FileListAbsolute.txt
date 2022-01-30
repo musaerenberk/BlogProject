@@ -4,3 +4,17 @@ C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.AssemblyInfoInputs.cache
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.AssemblyInfo.cs
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.csproj.CoreCompileInputs.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Data.deps.json
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Data.runtimeconfig.json
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Data.runtimeconfig.dev.json
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Data.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\ref\Blog.Data.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Data.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Entities.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\bin\Debug\net5.0\Blog.Shared.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.csproj.CopyComplete
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\ref\Blog.Data.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Data\obj\Debug\net5.0\Blog.Data.genruntimeconfig.cache

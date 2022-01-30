@@ -19,7 +19,7 @@ namespace Blog.Data.Concrete.EntityFramework.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=(localdb)\Git;Database=BerkKaradeli;Trusted_Connection=True;Connect Timeout=30;MultipleActiveResultSets=True;");
+                @"Server=(localdb)\Git;Database=DESKTOP-RGO6QPR\SQLEXPRESS;Trusted_Connection=True;Connect Timeout=30;MultipleActiveResultSets=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

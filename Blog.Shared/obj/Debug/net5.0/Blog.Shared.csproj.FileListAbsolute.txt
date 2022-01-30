@@ -1,0 +1,12 @@
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\bin\Debug\net5.0\Blog.Shared.deps.json
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\bin\Debug\net5.0\Blog.Shared.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\bin\Debug\net5.0\ref\Blog.Shared.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\bin\Debug\net5.0\Blog.Shared.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\obj\Debug\net5.0\Blog.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\obj\Debug\net5.0\Blog.Shared.AssemblyInfoInputs.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\obj\Debug\net5.0\Blog.Shared.AssemblyInfo.cs
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\obj\Debug\net5.0\Blog.Shared.csproj.CoreCompileInputs.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\obj\Debug\net5.0\Blog.Shared.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\obj\Debug\net5.0\ref\Blog.Shared.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\obj\Debug\net5.0\Blog.Shared.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Shared\obj\Debug\net5.0\Blog.Shared.csprojAssemblyReference.cache

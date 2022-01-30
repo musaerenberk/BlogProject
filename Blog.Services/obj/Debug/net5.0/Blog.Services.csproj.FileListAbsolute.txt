@@ -1,0 +1,11 @@
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\bin\Debug\net5.0\Blog.Services.deps.json
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\bin\Debug\net5.0\Blog.Services.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\bin\Debug\net5.0\ref\Blog.Services.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\bin\Debug\net5.0\Blog.Services.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.AssemblyInfoInputs.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.AssemblyInfo.cs
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.csproj.CoreCompileInputs.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\ref\Blog.Services.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.pdb

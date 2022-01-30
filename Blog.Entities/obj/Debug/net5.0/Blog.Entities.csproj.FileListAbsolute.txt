@@ -1,0 +1,15 @@
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\bin\Debug\net5.0\Blog.Entities.deps.json
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\bin\Debug\net5.0\Blog.Entities.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\bin\Debug\net5.0\ref\Blog.Entities.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\bin\Debug\net5.0\Blog.Entities.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\bin\Debug\net5.0\Blog.Shared.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\bin\Debug\net5.0\Blog.Shared.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\Blog.Entities.csprojAssemblyReference.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\Blog.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\Blog.Entities.AssemblyInfoInputs.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\Blog.Entities.AssemblyInfo.cs
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\Blog.Entities.csproj.CoreCompileInputs.cache
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\Blog.Entities.csproj.CopyComplete
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\Blog.Entities.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\ref\Blog.Entities.dll
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Entities\obj\Debug\net5.0\Blog.Entities.pdb
