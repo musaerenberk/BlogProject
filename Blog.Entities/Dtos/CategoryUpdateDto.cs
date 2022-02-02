@@ -10,6 +10,8 @@ namespace Blog.Entities.Dtos
 {
     public class CategoryUpdateDto
     {
+        [Required]
+        public int Id { get; set; }
         [DisplayName("Kategori Adı")]
         [Required(ErrorMessage = "{0} boş geçilemez.")]
         [MaxLength(70, ErrorMessage = "{0}{1} karakterden büyük olamaz.")]
