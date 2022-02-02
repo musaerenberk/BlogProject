@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "R3G6FrRWTBO4SpWlfG1LPFNC7XEOSD0nOIM09lkpjeozDIdX3/Vp7/v+4mPHngcJdaidZxr1vtDtV+UyRYHtkw==",
+  "dgSpecHash": "YeX5msCTT0IJxE9iI8PE5P3ol+v0xesd95aRoDdOtvrRnzDCIvehpFiIuiCa5Iee95hZeQfcohXSEy5N264yeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\meren\\OneDrive\\Belgeler\\BlogProject\\BlogProject\\Blog.Services\\Blog.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\meren\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\meren\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.0\\microsoft.data.sqlclient.2.0.0.nupkg.sha512",
     "C:\\Users\\meren\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.0\\microsoft.data.sqlclient.sni.runtime.2.0.0.nupkg.sha512",
     "C:\\Users\\meren\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0-preview.7.20365.15\\microsoft.entityframeworkcore.5.0.0-preview.7.20365.15.nupkg.sha512",
@@ -63,7 +64,7 @@
     "C:\\Users\\meren\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\meren\\.nuget\\packages\\system.private.uri\\4.3.2\\system.private.uri.4.3.2.nupkg.sha512",
     "C:\\Users\\meren\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\meren\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\meren\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\meren\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\meren\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\meren\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",
