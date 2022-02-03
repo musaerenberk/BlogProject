@@ -1,5 +1,5 @@
-﻿@using ProgrammersBlog.Shared.Utilities.Results.ComplexTypes
-@model ProgrammersBlog.Entities.Dtos.CategoryListDto
+﻿@using Blog.Shared.Utilities.Results.ComlexTypes
+@model Blog.Entities.Dtos.CategoryListDto
 @{
     Layout = "_Layout";
     ViewBag.Title = "Kategoriler Index";
@@ -62,6 +62,13 @@
                 </table>
             </div>
         </div>
+    </div>
+}
+@if (Model.ResultStatus == ResultStatus.Error)
+{
+    <div class="alert alert-danger mt-3">
+        @Model.Message <br />
+        Dashboard sayfasına geri dönmek için lütfen <a class="alert-link" asp-area="Admin" asp-controller="Home" asp-action="Index">tıklayınız.</a>
     </div>
 }
 @section Scripts
