@@ -38,3 +38,4 @@ C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Mvc\obj\Debug\net5
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Mvc\obj\Debug\net5.0\Blog.Mvc.pdb
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Mvc\obj\Debug\net5.0\Blog.Mvc.genruntimeconfig.cache
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Mvc\obj\Debug\net5.0\Blog.Mvc.csproj.CopyComplete
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Mvc\obj\Debug\net5.0\Blog.Mvc.MvcApplicationPartsAssemblyInfo.cs

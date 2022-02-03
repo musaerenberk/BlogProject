@@ -9,3 +9,4 @@ C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.dll
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\ref\Blog.Services.dll
 C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.pdb
+C:\Users\meren\OneDrive\Belgeler\BlogProject\BlogProject\Blog.Services\obj\Debug\net5.0\Blog.Services.csprojAssemblyReference.cache

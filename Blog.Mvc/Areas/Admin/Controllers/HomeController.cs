@@ -7,8 +7,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Blog.Mvc.Controllers
+namespace Blog.Mvc.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class HomeController : Controller
     {
 
