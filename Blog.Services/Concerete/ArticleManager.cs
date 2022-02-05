@@ -112,7 +112,6 @@ namespace Blog.Services.Concerete
             article.UserId = 1;
             await _unitOfWork.Articles.AddAsync(article);
             await _unitOfWork.SaveAsync();
-
             return new Result(ResultStatus.Success, $"{articleAddDto.Title} başlıklı makale başarıyla eklenmiştir.");
         }
 
@@ -122,7 +121,6 @@ namespace Blog.Services.Concerete
             article.ModifiedByName = modifiedByName;
             await _unitOfWork.Articles.UpdateAsync(article);
             await _unitOfWork.SaveAsync();
-
             return new Result(ResultStatus.Success, $"{articleUpdateDto.Title} başlıklı makale başarıyla güncellenmiştir.");
         }
 
@@ -137,7 +135,6 @@ namespace Blog.Services.Concerete
                 article.ModifiedDate = DateTime.Now;
                 await _unitOfWork.Articles.UpdateAsync(article);
                 await _unitOfWork.SaveAsync();
-
                 return new Result(ResultStatus.Success, $"{article.Title} başlıklı makale başarıyla silinmiştir.");
             }
             return new Result(ResultStatus.Error, "Böyle bir makale bulunamadı.");
@@ -151,7 +148,6 @@ namespace Blog.Services.Concerete
                 var article = await _unitOfWork.Articles.GetAsync(a => a.Id == articleId);
                 await _unitOfWork.Articles.DeleteAsync(article);
                 await _unitOfWork.SaveAsync();
-
                 return new Result(ResultStatus.Success, $"{article.Title} başlıklı makale başarıyla veritabanından silinmiştir.");
             }
             return new Result(ResultStatus.Error, "Böyle bir makale bulunamadı.");

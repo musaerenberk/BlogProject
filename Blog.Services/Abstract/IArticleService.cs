@@ -18,7 +18,7 @@ namespace Blog.Services.Abstract
         Task<IDataResult<ArticleListDto>> GetAllByCategory(int categoryId);
         Task<IResult> Add(ArticleAddDto articleAddDto, string createdByName);
         Task<IResult> Update(ArticleUpdateDto articleUpdateDto, string modifiedByName);
-        Task<IResult> Delete(int articleId);
+        Task<IResult> Delete(int articleId, string modifiedByName);
         Task<IResult> HardDelete(int articleId);
     }
 }
