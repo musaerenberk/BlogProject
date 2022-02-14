@@ -3,8 +3,7 @@
 @{
     Layout = "_Layout";
     ViewBag.Title = "Kategoriler Index";
-}
-@if (Model.ResultStatus == ResultStatus.Success)
+}@if (Model.ResultStatus == ResultStatus.Success)
 {
     <div id="modalPlaceHolder" aria-hidden="true"></div>
     <div class="card mb-4 mt-2">
@@ -132,6 +131,10 @@
                                     <td>${category.CreatedByName}</td>
                                     <td>${convertToShortDate(category.ModifiedDate)}</td>
                                     <td>${category.ModifiedByName}</td>
+                                    <td>
+                                <button class="btn btn-primary btn-sm"><span class="fas fa-edit"></span> Düzenle</button>
+                                <button class="btn btn-danger btn-sm btn-delete" data-id="${category.Id}"><span class="fas fa-minus-circle"></span> Sil</button>
+                                    </td>
                                             </tr>`;
                                             });
                                         $('#categoriesTable > tbody').replaceWith(tableBody);
@@ -143,7 +146,9 @@
                                 },
                                 error: function(err) {
                                     console.log(err);
-                                    toastr.error(`${err.statusText}`, 'İşlem Başarısız!');
+                                    $('.spinner-border').hide();
+                                    $('#categoriesTable').fadeIn(1000);
+                                    toastr.error(`${err.responseText}`, 'Hata!');
                                 }
                             });
                         }
@@ -246,9 +251,11 @@
                 function(event) {
                     event.preventDefault();
                     const id = $(this).attr('data-id');
+                    const tableRow = $(`[name="${id}"]`);
+                    const categoryName = tableRow.find('td:eq(1)').text();
                     Swal.fire({
                         title: 'Silmek istediğinize emin misiniz?',
-                        text: "Seçili kategori silinicektir!",
+                        text: `${categoryName} adlı kategori silinicektir!`,
                         icon: 'warning',
                         showCancelButton: true,
                         confirmButtonColor: '#3085d6',
@@ -263,27 +270,30 @@
                                 data: { categoryId: id },
                                 url: '@Url.Action("Delete", "Category")',
                                 success: function(data) {
-                                    const result = jQuery.parseJSON(data);
-                                    if (result.ResultStatus === 0) {
+                                    const categoryDto = jQuery.parseJSON(data);
+                                    if (categoryDto.ResultStatus === 0) {
                                         Swal.fire(
                                             'Silindi!',
-                                            'Seçili kategori başarıyla silinmiştir.',
+                                            `${categoryDto.Category.Name} adlı kategori başarıyla silinmiştir.`,
                                             'success'
                                         );
-                                        const tableRow = $(`[name="${id}"]`);
+
                                         tableRow.fadeOut(3500);
                                     } else {
                                         Swal.fire({
                                             icon: 'error',
-                                            title: 'Bir hata oluştu!',
+                                            title: 'Başarısız İşlem!',
                                             text: `${result.Message}`,
                                         });
                                     }
                                 },
-                                error: function(err) { console.log(err); }
-                            })
+                                error: function(err) {
+                                    console.log(err);
+                                    toastr.error(`${err.responseText}`, "Hata!")
+                                }
+                            });
                         }
-                    })
+                    });
                 });
         });
     </script>
