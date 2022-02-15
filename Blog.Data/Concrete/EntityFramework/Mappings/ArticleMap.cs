@@ -1,20 +1,19 @@
-﻿using Blog.Entities.Concrete;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Blog.Entities.Concrete;
 
 namespace Blog.Data.Concrete.EntityFramework.Mappings
 {
-    public class ArticleMap : IEntityTypeConfiguration<Article>
+    public class ArticleMap:IEntityTypeConfiguration<Article>
     {
         public void Configure(EntityTypeBuilder<Article> builder)
         {
-
-            builder.HasKey(a => a.Id);   
+            builder.HasKey(a => a.Id);
             builder.Property(a => a.Id).ValueGeneratedOnAdd();
             builder.Property(a => a.Title).HasMaxLength(100);
             builder.Property(a => a.Title).IsRequired(true);
@@ -55,7 +54,7 @@ namespace Blog.Data.Concrete.EntityFramework.Mappings
                     Thumbnail = "Default.jpg",
                     SeoDescription = "C# 9.0 ve .NET 5 Yenilikleri",
                     SeoTags = "C#, C# 9, .NET5, .NET Framework, .NET Core",
-                    SeoAuthor = "Berk Karadeli",
+                    SeoAuthor = "Alper Tunga",
                     Date = DateTime.Now,
                     IsActive = true,
                     IsDeleted = false,
@@ -78,7 +77,7 @@ namespace Blog.Data.Concrete.EntityFramework.Mappings
                     Thumbnail = "Default.jpg",
                     SeoDescription = "C++ 11 ve 19 Yenilikleri",
                     SeoTags = "C++ 11 ve 19 Yenilikleri",
-                    SeoAuthor = "Berk Karadeli",
+                    SeoAuthor = "Alper Tunga",
                     Date = DateTime.Now,
                     IsActive = true,
                     IsDeleted = false,
@@ -101,7 +100,7 @@ namespace Blog.Data.Concrete.EntityFramework.Mappings
                     Thumbnail = "Default.jpg",
                     SeoDescription = "JavaScript ES2019 ve ES2020 Yenilikleri",
                     SeoTags = "JavaScript ES2019 ve ES2020 Yenilikleri",
-                    SeoAuthor = "Berk Karadeli",
+                    SeoAuthor = "Alper Tunga",
                     Date = DateTime.Now,
                     IsActive = true,
                     IsDeleted = false,

@@ -1,6 +1,8 @@
 ﻿using Blog.Data.Concrete.EntityFramework.Mappings;
 using Blog.Entities.Concrete;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.EntityFrameworkCore;
+using ProgrammersBlog.Data.Concrete.EntityFramework.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
