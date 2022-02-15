@@ -14,7 +14,7 @@ namespace Blog.Shared.Utilities.Extensions
     public static class ControllerExtensions
     {
         /// <summary>
-        /// Render a partial view to string.
+        /// Render a partial view to sstring.
         /// </summary>
         /// <typeparam name="TModel"></typeparam>
         /// <param name="controller"></param>

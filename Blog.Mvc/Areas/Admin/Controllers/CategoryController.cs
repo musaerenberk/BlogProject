@@ -39,7 +39,7 @@ namespace Blog.Mvc.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _categoryService.Add(categoryAddDto, "Alper Tunga");
+                var result = await _categoryService.Add(categoryAddDto, "Berk Karadeli");
                 if (result.ResultStatus == ResultStatus.Success)
                 {
                     var categoryAddAjaxModel = JsonSerializer.Serialize(new CategoryAddAjaxViewModel
@@ -71,7 +71,7 @@ namespace Blog.Mvc.Areas.Admin.Controllers
         [HttpPost]
         public async Task<JsonResult> Delete(int categoryId)
         {
-            var result = await _categoryService.Delete(categoryId, "Alper Tunga");
+            var result = await _categoryService.Delete(categoryId, "Berk Karadeli");
             var deletedCategory = JsonSerializer.Serialize(result.Data);
             return Json(deletedCategory);
         }
