@@ -2,7 +2,7 @@
 using Blog.Entities.Concrete;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.EntityFrameworkCore;
-using ProgrammersBlog.Data.Concrete.EntityFramework.Mappings;
+using Blog.Data.Concrete.EntityFramework.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Data.Concrete.EntityFramework.Contexts
 {
-    public class ProgrammersBlogContext : IdentityDbContext<User, Role, int>
+    public class BlogContext : IdentityDbContext<User, Role, int>
     {
         public DbSet<Article> Articles { get; set; }
         public DbSet<Category> Categories { get; set; }
