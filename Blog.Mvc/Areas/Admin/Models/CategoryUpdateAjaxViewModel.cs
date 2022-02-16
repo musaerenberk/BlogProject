@@ -8,8 +8,8 @@ namespace Blog.Mvc.Areas.Admin.Models
 {
     public class CategoryUpdateAjaxViewModel
     {
-        public CategoryUpdateDto CategoryUpdateDto { get; set; }
-        public string CategoryUpdatePartial { get; set; }
-        public CategoryDto CategoryDto { get; set; }
+        public UserUpdateDto UserUpdateDto { get; set; }
+        public string UserUpdatePartial { get; set; }
+        public UserDto UserDto { get; set; }
     }
 }
