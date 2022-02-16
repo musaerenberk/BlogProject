@@ -6,10 +6,10 @@ using Blog.Entities.Dtos;
 
 namespace Blog.Mvc.Areas.Admin.Models
 {
-    public class UserAddAjaxViewModel
+    public class UserUpdateAjaxViewModel
     {
-        public UserAddDto UserAddDto { get; set; }
-        public string UserAddPartial { get; set; }
+        public UserUpdateDto UserUpdateDto { get; set; }
+        public string UserUpdatePartial { get; set; }
         public UserDto UserDto { get; set; }
     }
 }
