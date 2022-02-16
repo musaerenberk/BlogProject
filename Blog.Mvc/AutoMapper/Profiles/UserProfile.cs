@@ -8,11 +8,12 @@ using Blog.Entities.Dtos;
 
 namespace Blog.Mvc.AutoMapper.Profiles
 {
-    public class UserProfile:Profile
+    public class UserProfile : Profile
     {
         public UserProfile()
         {
             CreateMap<UserAddDto, User>();
+            CreateMap<User, UserUpdateDto>();
         }
     }
 }

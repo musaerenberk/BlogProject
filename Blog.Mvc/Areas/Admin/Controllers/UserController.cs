@@ -140,10 +140,18 @@ namespace Blog.Mvc.Areas.Admin.Controllers
                 return Json(deletedUserErrorModel);
             }
         }
+
+        public async Task<PartialViewResult> Update(int userId)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            var userUpdateDto = _mapper.Map<UserUpdateDto>(user);
+            return PartialView("_UserUpdatePartial", userUpdateDto);
+        }
         public async Task<string> ImageUpload(UserAddDto userAddDto)
         {
+       
             string wwwroot = _env.WebRootPath;
-           
+         
             string fileExtension = Path.GetExtension(userAddDto.PictureFile.FileName);
             DateTime dateTime = DateTime.Now;
             string fileName = $"{userAddDto.UserName}_{dateTime.FullDateAndTimeStringWithUnderscore()}{fileExtension}";
@@ -153,7 +161,7 @@ namespace Blog.Mvc.Areas.Admin.Controllers
                 await userAddDto.PictureFile.CopyToAsync(stream);
             }
 
-            return fileName; 
+            return fileName;
         }
     }
 }
