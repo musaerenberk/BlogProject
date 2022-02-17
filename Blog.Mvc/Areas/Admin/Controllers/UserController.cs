@@ -16,6 +16,7 @@ using System.Text.Json;
 using Blog.Mvc.Areas.Admin.Models;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 
 namespace Blog.Mvc.Areas.Admin.Controllers
 {
@@ -80,6 +81,13 @@ namespace Blog.Mvc.Areas.Admin.Controllers
                 return View("UserLogin");
             }
 
+        }
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home", new { Area = "" });
         }
         [Authorize(Roles = "Admin")]
         [HttpGet]
@@ -260,7 +268,7 @@ namespace Blog.Mvc.Areas.Admin.Controllers
         public async Task<string> ImageUpload(string userName, IFormFile pictureFile)
         {
             string wwwroot = _env.WebRootPath;
-         
+           
             string fileExtension = Path.GetExtension(pictureFile.FileName);
             DateTime dateTime = DateTime.Now;
             string fileName = $"{userName}_{dateTime.FullDateAndTimeStringWithUnderscore()}{fileExtension}";
