@@ -344,6 +344,15 @@ namespace Blog.Mvc.Areas.Admin.Controllers
                         TempData.Add("SuccessMessage", $"Şifreniz başarıyla değiştirilmiştir.");
                         return View();
                     }
+                    else
+                    {
+                        foreach (var error in result.Errors)
+                        {
+                            ModelState.AddModelError("", error.Description);
+                        }
+
+                        return View(userPasswordChangeDto);
+                    }
                 }
                 else
                 {
@@ -356,16 +365,15 @@ namespace Blog.Mvc.Areas.Admin.Controllers
                 return View(userPasswordChangeDto);
             }
 
-            return View();
         }
         [Authorize(Roles = "Admin,Editor")]
         public async Task<string> ImageUpload(string userName, IFormFile pictureFile)
         {
-            
             string wwwroot = _env.WebRootPath;
-            
+          
             string fileExtension = Path.GetExtension(pictureFile.FileName);
             DateTime dateTime = DateTime.Now;
+         
             string fileName = $"{userName}_{dateTime.FullDateAndTimeStringWithUnderscore()}{fileExtension}";
             var path = Path.Combine($"{wwwroot}/img", fileName);
             await using (var stream = new FileStream(path, FileMode.Create))
