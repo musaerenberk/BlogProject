@@ -42,7 +42,7 @@ namespace Blog.Mvc.Helpers
                 await pictureFile.CopyToAsync(stream);
             }
 
-            return new DataResult<UploadedImageDto>(ResultStatus.Success, $"{userName} adlı kullanıcının resimi başarıyla yüklenmiştir.", new UploadedImageDto
+            return new DataResult<UploadedImageDto>(ResultStatus.Error, $"{userName} adlı kullanıcının resimi başarıyla yüklenmiştir.", new UploadedImageDto
             {
                 FullName = $"{folderName}/{newFileName}",
                 OldName = oldFileName,
@@ -51,6 +51,28 @@ namespace Blog.Mvc.Helpers
                 Path = path,
                 Size = pictureFile.Length
             });
+        }
+
+        public IDataResult<ImageDeletedDto> Delete(string pictureName)
+        {
+            var fileToDelete = Path.Combine($"{_wwwroot}/{imgFolder}/", pictureName);
+            if (System.IO.File.Exists(fileToDelete))
+            {
+                var fileInfo = new FileInfo(fileToDelete);
+                var imageDeletedDto = new ImageDeletedDto
+                {
+                    FullName = pictureName,
+                    Extension = fileInfo.Extension,
+                    Path = fileInfo.FullName,
+                    Size = fileInfo.Length
+                };
+                System.IO.File.Delete(fileToDelete);
+                return new DataResult<ImageDeletedDto>(ResultStatus.Success, imageDeletedDto);
+            }
+            else
+            {
+                return new DataResult<ImageDeletedDto>(ResultStatus.Error, $"Böyle bir resim bulunamadı.", null);
+            }
         }
     }
 }
