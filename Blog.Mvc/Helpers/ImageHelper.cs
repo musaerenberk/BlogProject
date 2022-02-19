@@ -9,13 +9,16 @@ using Blog.Entities.Dtos;
 using Blog.Mvc.Helpers.Abstract;
 using Blog.Shared.Utilities.Extensions;
 using Blog.Shared.Utilities.Results.Abstract;
+using Blog.Shared.Utilities.Results.Concrete;
+using Blog.Shared.Utilities.Results.ComlexTypes;
 
 namespace Blog.Mvc.Helpers
 {
-    public class ImageHelper:IImageHelper
+    public class ImageHelper : IImageHelper
     {
         private readonly IWebHostEnvironment _env;
         private readonly string _wwwroot;
+        private readonly string imgFolder = "img";
 
         public ImageHelper(IWebHostEnvironment env)
         {
@@ -23,20 +26,31 @@ namespace Blog.Mvc.Helpers
             _wwwroot = _env.WebRootPath;
         }
 
-        public async Task<IDataResult<UploadedImageDto>> UploadUserImage(string userName, IFormFile pictureFile, string folderName)
+        public async Task<IDataResult<UploadedImageDto>> UploadUserImage(string userName, IFormFile pictureFile, string folderName = "userImages")
         {
-            
-            
+            if (!Directory.Exists($"{_wwwroot}/{imgFolder}/{folderName}"))
+            {
+                Directory.CreateDirectory($"{_wwwroot}/{imgFolder}/{folderName}");
+            }
+            string oldFileName = Path.GetFileNameWithoutExtension(pictureFile.FileName);
             string fileExtension = Path.GetExtension(pictureFile.FileName);
             DateTime dateTime = DateTime.Now;
-            string fileName = $"{userName}_{dateTime.FullDateAndTimeStringWithUnderscore()}{fileExtension}";
-            var path = Path.Combine($"{wwwroot}/img", fileName);
+            string newFileName = $"{userName}_{dateTime.FullDateAndTimeStringWithUnderscore()}{fileExtension}";
+            var path = Path.Combine($"{_wwwroot}/{imgFolder}/{folderName}", newFileName);
             await using (var stream = new FileStream(path, FileMode.Create))
             {
                 await pictureFile.CopyToAsync(stream);
             }
 
-            return fileName; 
+            return new DataResult<UploadedImageDto>(ResultStatus.Success, $"{userName} adlı kullanıcının resimi başarıyla yüklenmiştir.", new UploadedImageDto
+            {
+                FullName = $"{folderName}/{newFileName}",
+                OldName = oldFileName,
+                Extension = fileExtension,
+                FolderName = folderName,
+                Path = path,
+                Size = pictureFile.Length
+            });
         }
     }
 }
