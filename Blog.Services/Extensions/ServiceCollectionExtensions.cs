@@ -4,6 +4,7 @@ using Blog.Data.Concrete.EntityFramework.Contexts;
 using Blog.Entities.Concrete;
 using Blog.Services.Abstract;
 using Blog.Services.Concerete;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;

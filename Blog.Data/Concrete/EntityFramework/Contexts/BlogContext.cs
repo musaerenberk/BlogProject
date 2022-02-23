@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Data.Concrete.EntityFramework.Contexts
 {
-    public class ProgrammersBlogContext : IdentityDbContext<User, Role, int, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
+    public class BlogContext : IdentityDbContext<User, Role, int, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
     {
         public DbSet<Article> Articles { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -21,7 +21,7 @@ namespace Blog.Data.Concrete.EntityFramework.Contexts
         //    optionsBuilder.UseSqlServer(
         //        @"Server=(localdb)\ProjectsV13;Database=ProgrammersBlog;Trusted_Connection=True;Connect Timeout=30;MultipleActiveResultSets=True;");
         //}
-        public ProgrammersBlogContext(DbContextOptions<ProgrammersBlogContext> options) : base(options)
+        public BlogContext(DbContextOptions<BlogContext> options) : base(options)
         {
 
         }
