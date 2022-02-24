@@ -6,7 +6,7 @@
                 <div class="sb-sidenav-menu-heading">MENÜ</div>
                 <a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Dashboard
+                    Yönetim Paneli
                 </a>
                 <div class="sb-sidenav-menu-heading">İçerikler</div>
                 <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">
@@ -21,7 +21,7 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-comments"></i></div>
                     Yorumlar
                 </a>
-                @if (Model.Roles.Any(r=>r.Equals("Admin")))
+                @if (Model.Roles.Any(r => r.Equals("Admin")))
                 {
                     <div class="sb-sidenav-menu-heading">Kullanıcılar</div>
                     <a class="nav-link" asp-area="Admin" asp-controller="Role" asp-action="Index">
@@ -33,12 +33,12 @@
                         Kullanıcılar
                     </a>
                 }
-                
+
             </div>
         </div>
         <div class="sb-sidenav-footer">
             <div class="small">Giriş Yapan Kullanıcı:</div>
-           @Model.User.UserName
+            @Model.User.UserName
         </div>
     </nav>
 </div>
