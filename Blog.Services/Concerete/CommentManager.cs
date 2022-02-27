@@ -11,7 +11,7 @@ using Blog.Shared.Utilities.Results.Concrete;
 
 namespace Blog.Services.Concrete
 {
-    public class CommentManager:ICommentService
+    public class CommentManager : ICommentService
     {
         private readonly IUnitOfWork _unitOfWork;
 
@@ -33,9 +33,9 @@ namespace Blog.Services.Concrete
             }
         }
 
-        public async Task<IDataResult<int>> CountByIsDeleted()
+        public async Task<IDataResult<int>> CountByNonDeleted()
         {
-            var commentsCount = await _unitOfWork.Comments.CountAsync(c=>!c.IsDeleted);
+            var commentsCount = await _unitOfWork.Comments.CountAsync(c => !c.IsDeleted);
             if (commentsCount > -1)
             {
                 return new DataResult<int>(ResultStatus.Success, commentsCount);

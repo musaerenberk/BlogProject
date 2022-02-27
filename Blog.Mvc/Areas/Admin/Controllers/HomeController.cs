@@ -1,6 +1,10 @@
-﻿using Blog.Mvc.Areas.Admin.Models;
+﻿using Blog.Entities.Concrete;
+using Blog.Mvc.Areas.Admin.Models;
 using Blog.Mvc.Models;
+using Blog.Services.Abstract;
 using Blog.Shared.Utilities.Results.ComlexTypes;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -30,9 +34,9 @@ namespace Blog.Mvc.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var categoriesCountResult = await _categoryService.CountByIsDeleted();
-            var articlesCountResult = await _articleService.CountByIsDeleted();
-            var commentsCountResult = await _commentService.CountByIsDeleted();
+            var categoriesCountResult = await _categoryService.CountByNonDeleted();
+            var articlesCountResult = await _articleService.CountByNonDeleted();
+            var commentsCountResult = await _commentService.CountByNonDeleted();
             var usersCount = await _userManager.Users.CountAsync();
             var articlesResult = await _articleService.GetAll();
             if (categoriesCountResult.ResultStatus == ResultStatus.Success && articlesCountResult.ResultStatus == ResultStatus.Success && commentsCountResult.ResultStatus == ResultStatus.Success && usersCount > -1 && articlesResult.ResultStatus == ResultStatus.Success)
