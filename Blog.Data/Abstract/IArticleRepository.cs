@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Data.Abstract
 {
-    public interface IArticleRepository:IEntityRepository<Article>
+    public interface IArticleRepository : IEntityRepository<Article>
     {
-
     }
 }
