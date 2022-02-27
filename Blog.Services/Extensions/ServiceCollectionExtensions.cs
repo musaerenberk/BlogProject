@@ -4,6 +4,7 @@ using Blog.Data.Concrete.EntityFramework.Contexts;
 using Blog.Entities.Concrete;
 using Blog.Services.Abstract;
 using Blog.Services.Concerete;
+using Blog.Services.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -35,6 +36,7 @@ namespace Blog.Services.Extensions
             serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
             serviceCollection.AddScoped<ICategoryService, CategoryManager>();
             serviceCollection.AddScoped<IArticleService, ArticleManager>();
+            serviceCollection.AddScoped<ICommentService, CommentManager>();
             return serviceCollection;
         }
     }
