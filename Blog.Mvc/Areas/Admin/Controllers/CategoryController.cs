@@ -109,7 +109,7 @@ namespace Blog.Mvc.Areas.Admin.Controllers
         [HttpPost]
         public async Task<JsonResult> Delete(int categoryId)
         {
-            var result = await _categoryService.DeleteAsync(categoryId, "Berk");
+            var result = await _categoryService.DeleteAsync(categoryId, "Alper Tunga");
             var deletedCategory = JsonSerializer.Serialize(result.Data);
             return Json(deletedCategory);
         }
